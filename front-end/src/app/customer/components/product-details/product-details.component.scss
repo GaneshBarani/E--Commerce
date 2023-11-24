@@ -1,0 +1,185 @@
+.product-list {
+  display: flex;
+  justify-content: center;
+  padding: 20px; /* Adjusted padding */
+  margin: 0; /* Remove any default margins */
+
+  .product-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 600px; /* Set a maximum width for the card */
+    width: 100%; /* Take up 100% of the available width */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Increased box-shadow */
+    margin: 0 10px;
+    .product-image {
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+
+    .product-details {
+      padding: 30px; /* Increased padding */
+      text-align: center;
+
+      .product-name {
+        font-size: 2rem; /* Increased font size */
+        font-weight: bold;
+        margin-bottom: 15px; /* Increased margin */
+      }
+
+      .product-description {
+        margin-bottom: 20px; /* Increased margin */
+        color: #333;
+      }
+
+      .product-info {
+        margin-bottom: 20px; /* Increased margin */
+
+        .info-row {
+          display: flex;
+          justify-content: space-between;
+          margin-bottom: 12px; /* Increased margin */
+
+          .info-label {
+            font-weight: bold;
+            color: #555;
+          }
+
+          .info-value {
+            color: #da0202;
+          }
+        }
+      }
+
+      .product-sizes {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 30px; /* Increased margin */
+
+        .product-images {
+          .additional-images {
+            margin-top: 20px; /* Increased margin */
+
+            h3 {
+              font-size: 1.5rem; /* Increased font size */
+              margin-bottom: 15px; /* Increased margin */
+              color: #da0202;
+            }
+
+            .additional-image {
+              margin-bottom: 15px; /* Increased margin */
+
+              img {
+                width: 100px; /* Increased image width */
+                height: auto;
+                cursor: pointer;
+                border: 2px solid #da0202;
+                border-radius: 4px;
+              }
+            }
+          }
+        }
+      }
+
+      .actions {
+        .cart-button {
+          background-color: #da0202;
+          color: #fff;
+          font-size: 1.2rem; /* Increased font size */
+          padding: 15px 30px; /* Increased padding */
+          border: none;
+          border-radius: 4px;
+          cursor: pointer;
+
+          &:hover {
+            background-color: #ff3c3c;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+.product-reviews {
+  margin-top: 20px;
+
+  h3 {
+    color: #333;
+    font-size: 1.5em;
+    margin-bottom: 15px;
+  }
+
+  .review-item {
+    border: 1px solid #ccc;
+    padding: 15px;
+    margin-bottom: 15px;
+    background-color: #f9f9f9; /* Background color for each review item */
+
+    .review-info {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 10px;
+
+      .review-username {
+        font-weight: bold;
+        color: #333;
+      }
+
+
+
+    }
+
+    .review-comment {
+      color: #555;
+
+    }
+  }
+}
+.no-reviews-message {
+  text-align: center;
+  color: #888;
+  font-style: italic;
+  margin-top: 20px;
+  padding: 10px;
+  border: 1px dashed #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Additional styles for a more modern and visually appealing look */
+.no-reviews-message p {
+  margin: 0;
+  font-size: 1.2em;
+}
+
+.no-reviews-message::before {
+  content: "\1F622"; /* Unicode sad face */
+  font-size: 2em;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.back-button {
+  margin-top: 20px;
+}
+
+.back-button button {
+  display: flex;
+  align-items: center;
+  color: #007bff;
+}
+
+.back-button mat-icon {
+  margin-right: 5px;
+}
+.star {
+  color: gold; /* Set the color to yellow or any other color you prefer */
+  font-size: 35px; /* Adjust the font size as needed */
+  margin-right: 2px; /* Add spacing between stars if needed */
+}
